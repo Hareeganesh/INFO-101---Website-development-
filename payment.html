@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>POSITIVE DELIVERIES</title>
+	<link rel="icon" type="image/x-icon" href="blogo.jpg">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="scripts.js"></script>
+</head>
+<body>
+    <div class="box-area">
+	     <header>
+			<div class ="wrapper">
+				<div class ="logo">
+					<a herf = "#" > <img src="logo.jpg" id="Item1"> </a>
+				</div>
+			
+				<nav>
+					<a href = "index.html">HOME</a>
+					<a href = "products.html">PRODUCTS</a>
+					<a href = "faq.html">FAQ</a>
+					<a href = "payment.html">PAYMENT</a> 
+				</nav>
+			
+			</div>
+		 </header>
+		 
+	<div class = "banner-area">
+		 <h2>SPREADING POSITIVITY <br> SINCE 2022</h2>
+    </div>
+	<div class= "content-area" id="payment">
+		<div class="wrapper">
+			<form name="regpay" id="form1"> 
+				<h1><center>Register</center></h1>
+				<br>
+				<input type="text" placeholder="Username" name="Username">
+				<br>
+				<br>
+				<input type="password" placeholder="Password" name="Password"  maxlength="8"> 
+				<br>
+				<br>
+				<div id = "move">
+					Email:  <input type="text" name="Email" id ="move">  
+				</div>	
+				<br>
+				<br>
+					<div id = "box2">
+						<button onclick="return reg()" method="post"><img src="tick.jpg" id="tick"></button>
+					</div> 
+				<br>
+			</form>
+		</div>
+	</div>
+	
+	<form name="deliver" id="form2">
+	<br>
+		<h2>Delivery</h2>
+	<br>
+	<br>
+		Name: <input type="text" name="recipient">
+	<br>
+	<br>
+	<div id="m">
+		Address: <input type="text"  name="Address">
+	</div>
+	<br>
+	<div id="ph">
+	Phone number: <input type="tel" id="phone" name="num" maxlength="13" id="phn">
+	</div>
+	<br>
+	<br>
+	<p>Choose product to be delivered</p>
+	<br> <input type="number" name="proA" min="0" max="5"> The Seclusion Sweets <br>
+	<div id = "check">
+		<br> <input type="number" name="proB" min="0" max="5"> The Coffee Lover <br> 
+		<br> <input type="number" name="proC" min="0" max="5"> The Pamper Pack <br> 	
+	</div>  
+	<div id="check2">
+		<br> <input type="number" name="proD" min="0" max="5" id="selectopt"> The Indulge Her <br> 
+	</div>
+	<br>
+	<div>
+		<p>Choose time and day to be delivered</p> 	
+		<br>
+			<input id= "delivery" type="date" name="date">
+		<br>
+		<br>
+		
+		<select name="time" placeholder="select time">
+                <option value="" disabled selected hidden>Select Time</option>
+                <option value="8-10am">8am-10am</option>
+                <option value="10am-12pm">10am-12pm</option>
+                <option value="12-2pm">12pm-2pm</option>
+                <option value="2-4pm">2pm-4pm</option>
+                <option value="4-6pm">4pm-6pm</option>
+            </select>
+		
+		<br>
+		<br>
+			
+			<button onclick="return del()" method="post"><img src="tick.jpg" id="tick"></button>
+	</div>
+	</form>
+
+	<div>
+		<form id="form3"name="payform">
+		<br>
+			<h2>Payment</h2>
+		<br>
+			Card Number: <input type="text" name="CardN" maxlength="16">
+		<br>
+		<br>
+			<div id="m2">
+			Name on Card: <input type="text" name="NameC" maxlength="16">
+			<br>
+			</div>
+			<br>
+  
+		<select name="mm" placeholder="MM">
+                <option value="" disabled  selected hidden>MM</option>
+                <option value="select">01</option>
+                <option value="select">02</option>
+                <option value="select">03</option>
+                <option value="select">04</option>
+                <option value="select">05</option>
+                <option value="select">06</option>
+                <option value="select">07</option>
+                <option value="select">08</option>
+                <option value="select">08</option>
+                <option value="select">09</option>
+                <option value="select">10</option>
+                <option value="select">11</option>
+                <option value="select">12</option>
+        </select>
+        <select name="yy" placeholder="YY">
+                <option value="" disabled  selected hidden>YY</option>
+                <option value="select">22</option>
+                <option value="select">23</option>
+                <option value="select">24</option>
+                <option value="select">25</option>
+                <option value="select">26</option>
+                <option value="select">27</option>
+        </select>
+		<br>
+		<br>
+			<input type="password" placeholder="CVC" name="cvc" maxlength="3"> 
+		<br>
+		<br>
+			<font>
+				<button onclick="return pay()" method="post"><img src="tick.jpg" id="tick"></button>
+			</font>
+		</form>
+	</div>
+  </div>
+</body>
+</html>	
